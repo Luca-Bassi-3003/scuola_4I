@@ -1,0 +1,65 @@
+<html>
+    <head><title>Form-Lable</title></head>
+    <body>
+        <!-- LABLE: è utile per gli utenti di screen reader, perché lo screen reader leggerà ad alta voce l'etichetta 
+            quando l'utente si concentra sull'elemento di input. 
+            aiuta anche gli utenti che hanno difficoltà a fare clic su regioni molto piccole (come i pulsanti 
+            di opzione o le caselle di controllo), perché quando l'utente fa clic sul testo all'interno dell'elemento 
+            <label>, attiva il pulsante di opzione / casella di controllo. 
+        -->
+
+        <form>
+            <lable> <!-- esempio base. faccio senza usare for/id perchè essendo l'input dentro il laber, il "collegamento c'è già" -->
+                Username: <input type="text" placeholder="username">
+                Password: <input type="password" placeholder="password">
+            </lable>
+
+            <!-- Altra maniera di scrittura
+                <lable>Username: <input type="text"></lable>
+                <lable>Password: <input type="password"></lable> 
+            -->
+        </form>
+
+            <hr>
+        
+    <!-- Utilizzo di for e id -->
+        <form>
+            <!-- for/id utilizzo per creare una sorta di collegamento tra label e input. dovranno contenere nel for e nell'id la stessa parola chiave -->
+            <label for="user">Username: </lable>
+            <input id="user" type="text" placeholder="username">
+
+            <label for="pass">Password: </label>
+            <input id="pass" type="password" placeholder="password">
+
+            <!-- ovviamente in questo caso, essendo che l'input è fuori dal label, non posso mettere in 
+                un label solo username e password, perchè la parola chiave deve essere diversa per i due -->
+        </form>
+
+        <hr>
+
+    <!-- Form Validations. (password troppo lunga o troppo corta, campo obbligatorio ecc)-->
+        <form>
+            <label for="user1">Username: </lable>
+            <input id="user1" type="text" placeholder="username" required>
+
+            <label for="pass1">Password: </label>
+            <input id="pass1" type="password" placeholder="password" required>
+            <!-- il required è valido per qualsiasi tipo di input type -->
+        </form>
+
+        <button>submit</button>
+
+        <hr>
+
+        <!-- Esempio di come impostare una sola scelta con i bottoni, utilizzando il type radio -->
+        <form>
+            <label for="m">Maschio: </lable>
+            <input name="genere" id="m" type="radio" required>
+    
+            <label for="f">Femmina: </label>
+            <input name="genere" id="f" type="radio" required>
+
+            <!-- con name imposto una categoria di appartenenza -->
+        </form>
+    </body>
+</html>

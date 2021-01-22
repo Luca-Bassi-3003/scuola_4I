@@ -1,0 +1,62 @@
+<html><!-- LE CLASSI POSSONO ESSERE ANCHE CON PIù ELEMENTI, AD ESEMPIO: table, td, tr {....} -->
+    <head>
+        <title>Selecton</title>
+        <style type="text/css">
+
+        /* Selettore Classe Standard (seleziona i tag) */
+            ul { 
+                color: rgb(255, 0, 0); /* definisce il colore del testo */
+                background-color:aquamarine; /* definisce lo sfondo del testo */
+            }
+
+            a { /* prende tutti i tag <a> */
+                color: yellow;
+            }
+
+            a[title] { /* prende tutti i tag a con attributo title */
+                color: gray;
+            }
+
+        /* Selettore Classe */
+            .testo{ /* la classe serve per riunire un tot di elementi: .testo (classe creata da me). posso metter anche due classi insime */
+                color: red;
+            }
+            .grosso{    /* guarda anche li.grosso */
+                font-style: italic;
+                font-size: larger;
+            }
+            
+        /* Selettore Elemento */
+            #elemento {/* il nome dopo l'hash verrà ripreso nell'id, dentro il body. l'id serve per identificare un singolo elmento: #testo */
+                color: blue;
+            }
+
+           /*  body > ul:nth-chind(1) > li:nth-child(3){
+                    background-color: orange;
+                } */
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>primo</li>
+            <li id="elemento">secondo</li>
+            <li>terzo</li>
+            <li>quarto</li>
+        </ul>
+
+        <hr>
+
+        <ul>
+            <li class="testo">primo</li>
+            <li class="testo grosso">secondo</li>
+            <li>terzo</li>
+            <li>quarto</li>
+        </ul>
+
+        <hr>
+
+        <a href="www.google.com">google</a>
+        <a href="www.google.com" title="Scemo chi legge">google con title</a>
+        
+    </body>
+</html>

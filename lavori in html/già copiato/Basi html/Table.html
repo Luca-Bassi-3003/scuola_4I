@@ -1,0 +1,66 @@
+<html>
+    <head><title>Table</title></head>
+    <body>
+        <!-- la tabella prima e dopo se stessa mette un invio -->
+        <table border="0"> <!-- riempimento= prima riga e poi colonna. quando si aggiungono elemnti nella riga selezionata, le celle si riempiono in orizzontale -->
+            <tr><!-- metto dei "titoli" con th nelle celle consecutive della riga tr -->
+                <th>Alunni</th> 
+                <th>Colore preferito</th>
+            </tr>
+            <tr> <!-- prima riga con Acuti -->
+                <td>Acuti Simone</td> <!-- nella prima cella metto il nome -->
+                <td>Giallo</td> <!-- nella cella di fianco metto il voto -->
+            </tr>
+            <tr>
+                <td>Ausili Popa Alessandro</td>
+                <td>Rosso</td> 
+            </tr>
+            <tr>
+                <td>Baldi Matteo</td>
+                <td>Verde</td> 
+            </tr>
+        </table>
+
+        <h3>Altra versione di tabella</h3>
+        <table border="1"> <!-- Border è per lo spessore del bordo della tabella -->
+        <!-- mettere border="0" è uguale a non scriverlo, in entrambi i casi, la tabella non avrà righe -->
+            <tr>
+                <th>Alunni</th>
+                <td>Acuti Simone</td> 
+                <td>Ausili Popa Alessandro</td>
+                <td>Baldi Matteo</td>
+            </tr>
+            <tr>
+                <th>Colore preferito</th>
+                <td>Giallo</td>
+                <td>Rosso</td> 
+                <td>Verde</td> 
+            </tr>
+        </table>
+
+        <h3>Altra versione di tabella</h3>
+        <table border="1" width="250"> <!-- Width è per il nmero di px che occupa la tabella nella pagina -->
+        <!-- se in width mettessi un num percentuale tipo 50%, la tabella occuperebbe il 50% dello scermo, che aumenta o diminuisce a seconda delle dimensioni della finestra -->
+            <tr>
+                <th></th>
+                <th>Si</th> 
+                <th>No</th>
+            </tr>
+            <tr> 
+                <td>sei mai andato in montagna?</td>
+                <td>X</td> 
+                <td></td>
+            </tr>
+            <tr>
+                <td>sei mai andato al mare?</td>
+                <td></td> 
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>hai mai visto un arcobaleno?</td>
+                <td>X</td> 
+                <td></td>
+            </tr>
+        </table>
+    </body>
+</html>

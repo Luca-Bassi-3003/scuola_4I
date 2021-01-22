@@ -1,0 +1,47 @@
+<html>
+    <head><title>prova con innerHTML</title></head>
+    <body>
+        Num 1: <input type="text" id="num1" value="0"><br /><!-- mette una casella di testo che mostra a video il valore zero e ciè il valore di partenza -->
+        Num 2: <input type="text" id="num2" value="0"><br /><!-- mette un'altra casella di testo con valore zero -->
+        <input type="button" value="Somma" onclick="somma()"><!-- mette un bottone che mostra a video la scritta somma e quando ci clicchi su, attiva la funzione somma() -->
+        <input type="button" value="differenza" onlick="differenza()"><!-- mette un bottone che mostra "differenza" e quando ci clicchi su esegue la funzione differenza() -->
+        <input type="button" value="fattoriale num1" onclick="fattoriale()"><!-- mette un bottone vhe mostra fattoriale di num1 e che quando lo si clicca esegue la funzione che calcola il fattoriale di num1 -->
+        <input type="button" value="Cancella" onclick="cancella()"><br /><br /><!-- mette un pulsante che mostra cancella e quando ci si clicca sopra esegue la funzione di cancellazione -->
+        Lavagna: <!-- con il tag div creo uno spazio riquadrato (quindi NON una input casella di testo ridimensionata) che vado a modificare mettendoci un colore e un bordo per delimitarlo -->
+        <div id="lavagna" style="width: 450px; height: 300px; border: solid 3px rgb(0,255,0);"></div>
+
+        <script>
+            function somma(){/* funzione che si attiva cliccando sul bottone somma */
+                let a = document.getElementById("num1").value; /* inizialiazzo una variabile e le assegn il valore di num1. la varianile inizializzata puù avere un qualsiasi valore. in questo sarà una stringa, perchè num1 inizilamente è una stringa, perchè il numero che voglio inserire è in una casella di testo */
+                let b = document.getElementById("num2").value; /* inizializzo una variabile e le assegno il avlore di num2 */
+                let r = 0; /* inizializzo una variabile e le assegno il valore di 0 */
+                r = parseInt(a) + parseInt(b); /* con parsInt(a) opp (b), trasforma la stringa "numerica" inserita, es 9, in numero effettivo. poi esegue la somma dei due numeri di a e b e la mette in r */
+                let str=""; /* inizializza una stringa vuota */
+                str = str+a+" + "+b+" = "+r; /* crea una stringa unica */
+                document.getElementById("lavagna").innerHTML += str+"<br />"; /* prende il tag con id "lavagna" e ci aggiunge la stringa contenuta in str. poi inserisce un a capo*/
+            }
+
+            function cancella(){ /* funzione che si attiva cliccando sul pulsante cancella */
+                document.getElementById("lavagna").innerHTML = ""; /* assegna al tag con id "lavagna" una sringa vuota */
+            }
+
+            function differenza(){
+                let a = document.getElementById("num1").value;
+                let b = document.getElementById("num2").value;
+                let r = 0;
+                r = parseInt(a) - parseInt(b);
+                let str="";
+                str = str+a+" - "+b+" = "+r;
+                document.getElementById("lavagna").innerHTML += str+ "<br />";
+            }
+
+            function fattoriale(){
+                let a = document.getElementById("num1").value;
+                a= parseInt(a);
+                if(a==0){
+                    return 1;
+                }return a*fattoriale(a-1);
+            }
+        </script>
+    </body>
+</html>

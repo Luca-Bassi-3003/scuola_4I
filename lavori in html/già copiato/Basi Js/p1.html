@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="lcd">
+   <input type="button" value="0" onclick="add(this.value)"> <!-- prende il tag dove è contenuto input e prende il valore di value -> 0 -->
+   <input type="button" value="1" onclick="add(this.value)">
+    <!-- value mi inserisce il valore che attribuisco al bottone. con add(this.value), prende il valore che ha value -->
+    <script>
+        function add(n){ /* n prende il valore di this.value */
+            document.getElementById("lcd").value += n;
+        }
+    </script>
+</body>
+</html>

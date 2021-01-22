@@ -1,0 +1,75 @@
+<html>
+    <head><title>Immagini</title></head>
+    <body>
+        <!-- sintassi: <img src="url" alt="testoalternativo" -->
+
+        <!-- alle immagini si possono applicare anche border e width come con la tabella -->
+        <img src="bonny.png" alt="immagine non vista"> 
+        <br>
+        <img src="Immagine 2020-11-01 231200.png"> <!-- senza testo alternativo -->
+        <br> 
+        
+        <hr>
+
+        <h3>Due modi diversi per le dimensoni dell'immagine</h3>
+        <h5>1 metodo:</h5>
+        <img src="bonny.png" alt="immagine non vista" style="width:500px;height:600px"> 
+
+        <h5>2 metodo:</h5> <!-- senza utilizzare style, oltre che a mettere width e height in due cose eparate, non devo mettere il px -->
+        <img src="bonny.png" alt="immagine non vista" width="500" height="600"> 
+
+        <hr>
+
+        <!-- Immagini cme collegamneto link -->
+        <a href="https://www.w3schools.com/html/html_images.asp">
+            <img src="Immagine 2020-11-01 231200.png" alt="immagine di bonny" style="width:100px;height:100px;">
+        </a>
+
+        <hr>
+
+        <!-- Image floating -->
+        <p>
+            <img src="bonny.png" alt="bonny" style="float:right;width:150px;height:150px;">
+            Bonny image will float to the right of the text.
+        </p>
+            
+        <p>
+            <img src="Immagine 2020-11-01 231200.png" alt="francesco" style="float:left; width:150px; height:150px;">
+            Francesco image will float to the left of the text.
+        </p>
+        
+        <br><br><br><br><br><br><br>
+        <hr>
+        
+        <!-- Image Maps -->
+        <img src="Immagine 2020-11-01 231200.png" alt="fra" usemap="#workmap"> <!-- usemap comincia con un # ed è seguito dal nome dell'image map, ed è usato per creare una relazione tra l'immagine e l'image map -->
+
+        <map name="workmap"> <!-- Il tag <map> crea/definisce una mappa immagine e name il suo nome (che deve essere uguale a quello della usemap). Una mappa immagine è un'immagine con aree cliccabili -->
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm"> <!-- <area> definisce le aree cliccabli -->
+        <area shape="poly" coords="35,270,330,225,63" alt="Phone" href="phone.htm"> <!-- shape la forma del'area, coords le coordinate -->
+        <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm"> <!-- alt il testo alternativo, href il link alla pagina -->
+        <area shape="default" alt="Coffee" href="coffee.htm">
+        <!-- le forme dell'area possono essere:
+            -rettangolare (rect) == coord (prendendo come punto di riferimento il lato sinistro): altoSx(X,Y)+bassoDx(X,Y)
+            -circolare (circle) == coord (prendendo come punto di riferimento il lato sinistro): trovare le coordinate del centro e poi specificare il raggio
+            -poligonale (poly) == posso creare qualsiasi poligono e ha bisogno di molte coord
+            -tutta l'immagine (default)
+        -->
+        </map>
+
+        <hr>
+
+        <!-- Background Image -->
+        <div style="background-image: url('https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/645908E4922D91D7ACBE7278EB401193643E9304ACA885CFF7195AAAE944FF09'); height: 1000px; text-align: center;" > <!-- le caratteristiche nello style vanno dentro i doppi apici -->
+            <!-- mette una foto dietro alla scritta -->
+            <!-- text-align è l'indentazione del testo -->
+            <font color="white" face="Ravie" size="7"> <!-- font non è supportato in html5, quindi si usa nel css -->                          
+                 “Trucks for Tykes, Trucks for Tykes <br>     
+                 Give your truck to Trucks for Tykes <br> 
+                 You’ll help Tom and Sue and Chuck <br> 
+                 So give a darn and give a truck!”<br> 
+             </font> 
+            <!-- a seconda delle grandezza dell'immagine, questa viene ripetuta più volte -->
+        </div> 
+    </body>
+</html>

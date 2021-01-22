@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>Links</title>
+        <style>
+            a:link { /* stile dei link */
+                font-style: italic;
+                text-decoration-color: rgb(0, 0, 0); /* è il colore della linea sotto del link */
+                color: rgb(255, 0, 0);
+            }
+        </style>
+    </head>
+    <body>
+        <h3> 
+            <!-- ancoraggio di una pagina in generale -->
+            <a href="https://www.w3schools.com/html/html_links.asp">collegamento link</a>
+            
+            <hr>
+
+            <!-- Collegamento con i target attribute -->
+            <a href="https://www.netflix.com/it/" target="_self">collegamento a netflix con _self</a>
+            <br> <!-- default. apre il documento nella stessa scheda -->
+
+            <a href="https://www.netflix.com/it/" target="_blank">collegamento a netflix con _blank</a>
+            <br> <!-- apre il documento in un'altra finestra -->
+
+            <a href="https://www.netflix.com/it/" target="_parent">collegamento a netflix con _parent</a>
+            <br> <!-- apre il documento nel frame principale -->
+    
+            <a href="https://www.netflix.com/it/" target="_top">collegamento a netflix con _top</a>
+            <br> <!-- apre il documento nel corpo intero della finestra -->
+
+            <hr>
+
+            <!-- Absolute URLSs:un indirizzo web completo --> da capire meglio come funzionano
+            <p><a href="https://www.w3.org/">W3C</a></p>
+            <p><a href="https://www.google.com/">Google</a></p>
+
+            <!-- Relative URLs: un collegamento a una pagina all'interno dello stesso sito Web, quindi indirizzo locale -->
+            <p><a href="html_images.asp">HTML Images</a></p>
+            <p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+            <hr>
+
+            <!-- Immagini cme collegamneto link -->
+            <p><a href="https://www.w3schools.com/html/html_images.asp">
+                <img src="Immagine 2020-11-01 231200.png" alt="immagine di bonny" style="width:100px;height:100px;">
+            </a></p>
+            
+            <hr>
+
+            <!-- Bottoni come link: per farlo serve il JavaScript, che ti permette di specificare cosa fa il bottone -->
+            <button onclick="document.location='https://www.amazon.it/'">Amazon</button>
+
+            <hr>
+
+            <!-- Links title -->
+            <p><a href="https://www.amazon.it/" title="amazon site">Home Sito</a></p>
+            
+            <hr>
+
+            <!-- Link a un indirizo email -->
+            <p><a href="mailto:luca.bassi@galileiostiglia.edu.it">questo è il collegamento alla email</a></p>
+            <!-- dentro a mailto utilizzo href che mi porta direttamente all'emailo dell'utente. quindi apre la posta elettronica e apre una nuova mail che ha come destinatario l'email nel link -->
+
+            <hr>
+
+            <!-- Links a un numero di telefono -->
+            <p><a href="tel:349-677-1119">cellulare</a></p>
+
+            <!-- Link a un numero con prefisso paese -->
+            <p><a href="tel:+39349-677-1119">cellulare con prefisso</a></p>
+
+            <!-- Altro modo -->
+            phone:<span itemprop="telephone"><a href="tel:+393496771119">3349677119</a></span>
+            <!-- itemprop (si puù applicare anche ad alri tag) Each name-value pair is called a property, and a group of one or more properties forms an item. -->
+
+            <hr>
+
+            <!-- Link a una chimata skype -->
+            <p><a href="callto:3496771119">chiamata skype</a></p>
+
+            <hr>
+
+            <!-- Link sms -->
+            <p><a href="sms:+39-349-677-1119">link sms</a></p>
+
+            <!-- Altro modo -->
+            <p><a href="sms:+39-349-677-1119?body=Interested%20in%20your%20product">link sms 2</a></p>
+            <!-- % 20 viene utilizzato al posto dello spazio per assicurarti di non interrompere l'html -->
+
+            <!-- Link fax -->
+            <p><a href="fax:+3350056000">fax</a></p>
+    </body>
+</html>

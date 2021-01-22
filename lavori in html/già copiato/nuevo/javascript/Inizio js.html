@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>prova js</title>
+    </head>
+    <body>
+        <h1 id="sooos">AAAAHHHHH WOOOOO</h1>
+        <p onclick="funzProva()">testo di prova</p>
+
+        <form>
+            <input type="button" id="butt" value="schiaccia" onclick="funzProva()"> <!-- per scrivere dentro il bottone avrei potuto anche usareil tag button; e per cliccarci avrei potuto usare sempre onclick -->
+        </form>
+
+        <script>
+            let x = "bellissimo";
+            /* vanno bene entrabe le scritture */
+            document.getElementById("sooos").innerHTML = "AAAAHHHHH WOOOOO" + x+ " "; 
+            document.getElementById("sooos").innerHTML +=  x; /* con document.get ecc. vado a prendere il tag in cui l'ID è sooos. poi con innerHTML che contiene la scritta AAHHH ecc., vado a sommare il valore di x. le mdifiche fatte all'innerHTML andranno a cambiare direttamente il contenuto del tag con id sooos */
+
+            function funzProva(n){ /* la funzione viene richiamata solo mettendo oncluck="funzProva()" dentro alla parte di cocice dove vogliamo richiamarla */
+            document.getElementById("butt").innerHTML += "<br>"+ "cacchio";
+                
+                
+            }
+        </script>   
+
+    </body>
+</html>

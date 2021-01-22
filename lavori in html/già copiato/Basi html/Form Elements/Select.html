@@ -1,0 +1,57 @@
+<html>
+    <head><title>Form-Select</title></head>
+    <body>
+        <form>
+            <!-- Prima opzione -->
+            <select>
+                <option>cane</option> <!-- Gli elementi <option> definiscono un'opzione che può essere selezionata. Per impostazione predefinita, è selezionato il primo elemento nell'elenco a discesa. -->
+                <option>gatto</option>
+                <option>criceto</option>
+                <option>coniglio</option>
+                <option>pappagallo</option>
+                <option>topo</option>
+                <option>furetto</option>
+            </select>
+        </form>
+        
+        <hr>
+
+        <form>
+            <!-- Seconda opzione -->
+            <label for="cars">Choose a car:</label> 
+            <select id="cars" name="cars"> <!-- se metto disabled dentro select mi disabilita l'elenco -->
+                <option value="volvo">Volvo</option> <!-- value che indica cosa viene inviato al server al momento dell'invio del modulo. -->
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+        </form>
+
+        <hr>
+        
+        <!-- Terza opzione -->
+        <form> <!-- size specifica il numero di elementi da visualizzare. quelli non visualizzati verranno visti tramite un pulsante di scorrimento-->
+            <label for="cars">Choose a car:</label>
+            <select id="cars" name="cars" size="2">
+                <option disabled selected value="cars">Cars</option> <!-- fa comparire il nome dell'elenco, e non ne tiene conto -->
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat" selected>Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+        </form>
+
+        <hr>
+        
+        <!-- Quarta opzione -->
+        <form> <!-- multiple è un attributo che permette agli utenti di selezionare più di un valore -->
+            <label for="cars">Choose a car:</label>
+            <select id="cars" name="cars" size="4" multiple>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+In una pagina HTML tutti gli elementi sono connotati da tag (letteralmente “etichette”). Si tratta di marcatori che 
+evidenziano non tanto l’aspetto, quanto il senso, il ruolo, o l’organizzazione che vogliamo assegnare ai contenuti.
+Un tag è una keyword del linguaggio racchiusa tra parentesi angolari (<>). I tag HTML non sono “case sensitive” quindi 
+scriverli in minuscolo o in maiuscolo è esattamente la stessa cosa.
+
+Molti elementi in HTML servono per descrivere porzioni di pagina, aree, o contenuti.
+Pertanto un elemento HTML è quasi sempre un contenitore e il suo contenuto è delimitato da:
+
+	tag di apertura (es. <p>);
+	tag di chiusura (es. </p>).
+
+I tag HTML possono rappresentare oggetti (come ad esempio le immagini) o servire a suddividere la pagina in aree 
+(come i ‘div’ o le ‘section’). Le principali tipologie di visualizzazione in cui si dividono gli elementi sono:
+
+
+HTML
+<!DOCTYPE html> --> Serve semplicemente a dire che il file è una pagina HTML e in particolare che 
+                     si tratta di un documento secondo lo standard HTML5. Lo si mette punto e basta.
+
+<html> --> È il tag che racchiude tutta la pagina e ci permette ad esempio di definire quale sia la 
+            lingua della pagina, come nel nostro caso in cui abbiamo definito che il documento è in 
+            Italiano grazie all’attributo lang="it".
+
+<head> --> "testa". Questo tag contiene una serie di informazioni utili per la gestione della pagina, 
+            ad esempio quale sarà il titolo che apparirà sui motori di ricerca e sulle linguette del browser.
+
+<body> --> "corpo". Contiene gli elementi della pagina, tutto il contenuto e tutti i relativi tag che saranno 
+            poi resi a video vengono inseriti qui dentro, come abbiamo fatto nel nostro caso con il titolo e il 
+            paragrafo.
+
+<img> -->
+
+<b> --> (bold) "grassetto"
+
+<strong> --> "forte"
+
+<i> --> (italic) "corsivo"
+
+<em> --> (emphasize) "enfatizzare/accentuare"
+
+<ins> --> (inserted) "inserito"
+
+<sub> --> (subscript) "pedice"
+
+<sup> --> (superscript) "apice"
+
+<mark> --> "marcare"
+
+<del> --> (deleted) "cancellato"
+
+<small> --> "piccolo"
+
+<title> --> "titolo"
+
+<ul> --> (unordered list) "lista non ordinata"
+
+<ol> --> (ordered list) "lista ordinata"
+
+<li> --> (list items) "elementi della lista"
+
+<a> --> (ancor) "ancora"
+
+<table> --> "tabella" (<tr>; <td>; <th>)
+
+<span> -->
+
+<center> -->
+
+<border> -->
+
+<width> -->
+
+<form> --> contenitore per tipi diversi di elementi input, ad esempio, bottoni
+
+<dl> -->
+
+<dt> -->
+
+<dd> -->
+
+<label> --> "etichetta"
+
+
+
+

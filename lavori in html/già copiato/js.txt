@@ -1,0 +1,35 @@
+document.getElementById() --> nel documento html prendo un elemento con ID[nomeID] (l'id si trova nei tag a cui l'ho scritto)
+a questo ci posso aggiungere:
+.innerHTML --> La proprietà innerHTML è utile per ottenere o sostituire (quindi modificare) il contenuto degli elementi HTML compresi <html> e <body>.
+.style.fontSize
+.style.display = "none" --> lo utilizzo per nascondere l'elemento
+
+
+console.log()
+
+parsInt()--> converte la stringa in numero
+parsFloat()-->converte la stringa in numero decimale 
+
+window.promp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

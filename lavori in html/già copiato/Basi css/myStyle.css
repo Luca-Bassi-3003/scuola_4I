@@ -1,0 +1,12 @@
+h2 {
+    color: rgb(255, 0, 0);
+    background-color: aquamarine;
+}
+
+body {
+    background-color: yellowgreen;
+}
+
+hr {
+    border-color: black;
+}

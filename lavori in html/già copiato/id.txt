@@ -1,0 +1,6 @@
+-è utilizzato per spicificare in maniera univoca un elemento ID dell'html.
+-L'attributo id viene utilizzato per puntare a una specifica dichiarazione di stile in un foglio di stile
+-non si possono avere più di un elemento con lo stesso ID
+-è utilizzato da JS per accedere e manipolare l'elemento con un ID specifico
+-il nome è case sensitive
+-Il nome dell'ID deve contenere almeno un carattere e non deve contenere spazi (spazi, tabulazioni, ecc.).

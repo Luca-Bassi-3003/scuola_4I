@@ -1,0 +1,7 @@
+-l'attributo value specifica il valore di un elemento <imput>
+-La proprietà value imposta o restituisce il valore dell'attributo value di un campo di testo.
+-La proprietà value contiene il valore predefinito OPPURE il valore digitato da un utente (o un valore impostato da uno script).
+
+
+
+

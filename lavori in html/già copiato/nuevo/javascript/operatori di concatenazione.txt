@@ -1,0 +1,12 @@
+l'operatore '+' viene anche utilizzato per concatenare due stringhe
+es (dentro lo script): 
+    var txt1 = "billy";
+    var txt2 = "joe";
+    var txt3 = txt1 + " "+ txt2; --> mette insieme txt1, uno spazio e txt2
+    opp document.getElementById("id").innerHTML = txt1 + " "+ txt2; 
+
+un altro modo per concatenare due stringhe può essere mettendo l'operatore '+='
+es (dentro lo script):
+    txt1 = "What a very ";
+    txt1 += "nice day";
+
