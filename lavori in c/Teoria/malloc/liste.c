@@ -16,7 +16,7 @@
     Ctrl + Shift + (F|H) => trova/sostituisci su tutti i file
     Ctrl + Shift + B => compila
     Ctrl + K, C => commenta righe selezione
-    Ctrl + K, U => scommenta righe selezione
+    Ctrl + K, U => commenta e scommenta righe selezione
 */
 
 typedef struct elemento
