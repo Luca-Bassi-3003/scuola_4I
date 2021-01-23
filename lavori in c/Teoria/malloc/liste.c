@@ -1,6 +1,10 @@
-/* Al programma di esempio sulle liste, provate ad aggiungere 2 funzioni:
+/* Al programma di esempio sulle liste, provate ad aggiungere queste funzioni:
     * addToEnd: aggiunge un elemento in fondo alla lista
     * addOrdered: aggiunge un elemento alla lista in maniera ordinata. Es: 1->4->8->NULL, addOrdered 6 produce 1->4->6->8->NULL
+    * find: trova un elemento nella lista e ritorna 1 se presente, 0 altrimenti
+    * findIndex: trova un elemento nella lista e ritorna la sua posizione in base 0
+    * remove: rimuove un elemento dalla lista
+    * length: ritorna la lunghezza della lista
  */
 
 #include <stdio.h>
